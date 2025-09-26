@@ -27,6 +27,8 @@ body {
     font-size: 1rem;
     color: rgb(32, 32, 32);
     background-color: rgb(255, 255, 255);	
+
+     background-image: linear-gradient(to bottom left, #fdf9f0 0%, #f7f7f7 100%);
 }
 
 h1,
@@ -37,6 +39,15 @@ h5,
 h6 {
     font-family: catamaran;
 }
+h1{
+	font-size: 2rem;
+}
+h2{
+
+font-size: 1.5rem;
+font-weight: 500;
+}
+
 
  
 	
@@ -100,6 +111,9 @@ a:active {
 /* Site Header  */
 .site-heading {
     position: relative;
+	  max-width: 35rem;
+	   margin: 0 auto;
+
 	
 }
 
@@ -113,16 +127,17 @@ a:active {
  	overflow: hidden;    font-weight: 700;
     letter-spacing: 0.15rem;
     text-transform: uppercase;
-	  
-	
+
 }
 
 .site-heading img {
 
     width: 100%;
-    min-height: 25rem;
+    min-height: 20rem;
 	object-fit: cover;
-	max-height: 40rem;
+	max-height: 35rem;
+	border-radius: .5rem;
+	background-color: #F8F6F4;
 }
 
 /* Aboout */
@@ -135,13 +150,43 @@ a:active {
 }
 .about p{
 	text-align: left;
+
 }
+
+	/* Portfolio */
+	.portfolio{
+		text-align: center;
+	}
+
+
 .Projects{
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: column;
-	max-width: 15rem;
-	max-height: 30rem;
+	gap: 1rem;
+	justify-content: center;
+	margin: auto 1rem;
+	text-align: left;
+}
+
+
+.Projects article{
+	padding: 1rem;
+	background-color: #F8F6F4;
+	border: solid #ebebeb .1rem;
+	max-width: 20rem;
+	border-radius: 0.5rem;
+	
+	
+	
+	
+	 
+}
+.Projects article img{
+	
+	vertical-align: bottom; 
+	
+	
+	
 }
 
 
