@@ -1,0 +1,171 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN ANOTHER FILE)
+	- Normalize
+	- Box sizing
+	- Media width
+# Base
+	- Typography
+	- Elements
+	- Links
+# Layouts
+# Components
+	- Header
+	- Main
+	- Footer
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+/* Typography
+--------------------------------------------- */
+body {
+    font-family: nunito sans;
+    font-size: 1rem;
+    color: rgb(32, 32, 32);
+    background-color: rgb(255, 255, 255);	
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: catamaran;
+}
+
+ 
+	
+
+
+/* Links
+--------------------------------------------- */
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+	
+}
+
+a:visited {
+	
+}
+
+a:hover {
+	
+}
+
+a:focus {
+	
+}
+
+a:active {
+	
+}
+
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+
+.site-wrapper {
+	max-width: 120rem;
+	margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.site-name{
+	font-size: 1.75rem;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+}
+
+.nav-menu {
+    display: none;
+}
+/* Main
+--------------------------------------------- */
+/* Site Header  */
+.site-heading {
+    position: relative;
+	
+}
+
+.site-heading h1 {
+    position: absolute;
+	 top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+	white-space: nowrap;
+ 	overflow: hidden;    font-weight: 700;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+	  
+	
+}
+
+.site-heading img {
+
+    width: 100%;
+    min-height: 25rem;
+	object-fit: cover;
+	max-height: 40rem;
+}
+
+/* Aboout */
+
+.about{
+
+	text-align: center;
+	max-width: 35rem;
+	margin: 0 auto;
+}
+.about p{
+	text-align: left;
+}
+.Projects{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	max-width: 15rem;
+	max-height: 30rem;
+}
+
+
+
+
+
+/* Footer
+--------------------------------------------- */
+
+
+footer{
+	background-color: #DDDDDD;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+	gap: 1rem;
+	margin-top: 2rem;
+}
+.socials img{
+
+    width: 1.3rem;
+    height: 1.3rem;
+    margin: 0 0.5rem;
+}
+
+
