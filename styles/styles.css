@@ -23,29 +23,32 @@
 /* Typography
 --------------------------------------------- */
 body {
-    font-family: nunito sans;
-    font-size: 1rem;
-    color: rgb(32, 32, 32);
-    background-color: rgb(255, 255, 255);	
-
-     background-image: linear-gradient(to bottom left, #fdf9f0 0%, #f7f7f7 100%);
+    font-family: Montserrat;
+	font-weight: 460;
+    font-size: 1.3rem;
+    background-color: #f3f3f3;
 }
+
 
 h1,
 h2,
 h3,
-h4,
 h5,
 h6 {
-    font-family: catamaran;
+    font-family: Catamaran;
 }
 h1{
 	font-size: 2rem;
 }
 h2{
 
-font-size: 1.5rem;
+font-size: 2rem;
 font-weight: 500;
+}
+h4{
+
+display: flex;
+
 }
 
 
@@ -93,6 +96,8 @@ a:active {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+	
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .site-name{
 	font-size: 1.75rem;
@@ -110,29 +115,29 @@ a:active {
 --------------------------------------------- */
 /* Site Header  */
 .site-heading {
-    position: relative;
-	  max-width: 35rem;
-	   margin: 0 auto;
+	
+	   margin: 3rem auto;
+	 
 
 	
 }
 
 .site-heading h1 {
     position: absolute;
-	 top: 50%;
+	 top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
 	white-space: nowrap;
- 	overflow: hidden;    font-weight: 700;
-    letter-spacing: 0.15rem;
+ 	overflow: hidden;  
     text-transform: uppercase;
+	font-size: 2.3rem;
 
 }
 
 .site-heading img {
-
-    width: 100%;
+	display: block;
+	margin: 0 auto;
     min-height: 20rem;
 	object-fit: cover;
 	max-height: 35rem;
@@ -146,16 +151,16 @@ a:active {
 
 	text-align: center;
 	max-width: 35rem;
-	margin: 0 auto;
+	margin: 3rem auto;
+	
 }
 .about p{
 	text-align: left;
 
 }
-
-	/* Portfolio */
 	.portfolio{
 		text-align: center;
+		
 	}
 
 
@@ -171,8 +176,10 @@ a:active {
 
 .Projects article{
 	padding: 1rem;
-	background-color: #F8F6F4;
-	border: solid #ebebeb .1rem;
+	color: beige;
+	font-size: 1.2rem;
+	background-color: #01000C;
+	
 	max-width: 20rem;
 	border-radius: 0.5rem;
 	
@@ -187,6 +194,29 @@ a:active {
 	
 	
 	
+}
+
+.production-credits{
+	display: block;
+	text-align: center;
+	margin: auto 1rem;
+	padding: 1rem;
+	
+	
+}
+.production-credits h4 {
+    align-items: center;
+    justify-content: center; /* centers the whole heading */
+    gap: .7rem; /* space between text and image */
+}
+
+.production-credits img{
+	text-align: center;
+	max-width: 1.5rem;
+}
+
+.production-credits p{
+	text-align: left;
 }
 
 
