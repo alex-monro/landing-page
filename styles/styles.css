@@ -45,6 +45,9 @@ h2{
 font-size: 2rem;
 font-weight: 500;
 }
+h3{
+		font-size: 1.3rem;
+}
 h4{
 
 display: flex;
@@ -195,28 +198,44 @@ a:active {
 	
 	
 }
-
-.production-credits{
-	display: block;
-	text-align: center;
-	margin: auto 1rem;
-	padding: 1rem;
-	
-	
+.production-credits {
+    margin: 2rem auto;
+    max-width: 20rem;
 }
-.production-credits h4 {
+
+.production-credits a {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center; /* centers the whole heading */
-    gap: .7rem; /* space between text and image */
+    border: .15rem solid #01000C;
+
 }
 
-.production-credits img{
+.production-credits h3 {
+
+   margin: 1 auto;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+
+.sound-icon {
+    max-width: 1.5rem;
+}
+
+.genius-logo {
+    max-width: 1.5rem;
+	margin-bottom: 1rem;
+	
+}
+
+
+
+.contact{
+
 	text-align: center;
-	max-width: 1.5rem;
-}
-
-.production-credits p{
-	text-align: left;
 }
 
 
