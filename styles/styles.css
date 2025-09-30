@@ -136,20 +136,24 @@ a:active {
     text-transform: uppercase;
 	font-size: 2.7rem;
 	text-shadow: #000000 1px 1px 1px;
-	font-weight: 1200;
+	font-weight: 900;
 	text-align: center;
 
 
 }
+.site-heading {
+    background: linear-gradient(135deg, #FFE5E5 0%, #D4A5D4 100%);
+    /* OR use your background image with an overlay */
+}
+
 
 .site-heading img {
 	display: block;
 	margin: 0 auto;
  
 	object-fit: cover;
-	min-width: 50rem;
 	border-radius: .5rem;
-	max-height: 20rem;
+
 	background-color: #F8F6F4;
 }
 
