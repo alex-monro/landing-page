@@ -47,7 +47,7 @@ h1{
 }
 
 h2{
-	font-size: 2rem;
+	font-size: 2.5rem;
 	font-style: bold;
 }
 
@@ -110,11 +110,12 @@ a:active {
 	justify-content: space-between;
 	align-items: center;
         z-index: 2000;
+        padding-left: 1rem;
 }
 
 .site-name{
     font-size: 1.7rem;
-    padding-left: 1rem;
+   
 }
 
 .site-navigation {
@@ -194,32 +195,28 @@ a:active {
 /* Site Header  */
 .site-heading {
     position: relative;
+    
+    
    
   
     
 }
 
-.site-heading::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.315);
-    z-index: 1;
 
-}
+
 
 .hero-text {
 	position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 	text-align: center;
 	margin: 0 auto;
 	white-space: nowrap;
     z-index: 2;
+    transition: transform .5s ease;
+   
+    
 
 }
 .hero-text h1{
@@ -235,37 +232,57 @@ a:active {
 .hero-text p {
     color: white;
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: 700;
 	margin: 0 auto;
    
 }
+/* applied a slight zoom when Hovering over hero text when on desktop */
+
+
 
 
 
 .site-heading img {
     display: block;
-    margin: 0 auto;
-    object-fit: cover;
-	min-height: 20rem;
-    width: 100%;
-    position: relative;
+     width: 100%;
+    height: auto;
+     
     
     
-	object-position: bottom;
+
     
 }
 @media (min-width: 50rem){
 
     .site-heading{
+        overflow: hidden;
 
-          min-height: 60vh
     }
+      .site-heading img{
+        max-height: 23rem;
+        width: 100%;
+        height: 100%; 
+            object-fit: cover; 
+     
+        
+       
+      
+     
+    }
+   
+
+       .hero-text:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+
+       }
+
 	.hero-text h1 {
 		font-size: 4rem;
 	}
 	.hero-text p {
 
     font-size: 1.3rem;
+    
 	
 
 
@@ -277,27 +294,20 @@ a:active {
 /* Aboout */
 
 .about {
-    padding: 5rem 2rem; /* more space from hero */
+    padding: 3rem 0rem 6rem 0rem; /* more space from hero */
 
     margin: 0 auto;
-     background-color:  #faf0ec;
+  
+  background-color: #f8f8f8; /* very light gray */
+
 }
 
 .about h2 {
     text-align: center;
-    font-size: 2.5rem;
     margin-bottom: 2rem;
     font-weight: 700;
 }
 
-
-  
-	.portfolio{
-		text-align: center;
-        
-	background-color:  rgb(255, 255, 255)
-		
-	}
 
 .about p {
     position: relative;
@@ -305,47 +315,29 @@ a:active {
      max-width: 40rem;
 }
 
-.about p::after {
-    content: '';
-    display: block;
-    width: 45%;
-    height: 0.2rem;
-    background-color: #c86450;
-    margin: 3rem auto 0;
+/* portfolio */
+.portfolio{
+    color: rgb(0, 0, 0);
+    background-color: #f5f5f5;
+     padding: 1rem;
+
+    	text-align: center;
+
 }
 
+  
 .Projects{
 	display: flex;
 	flex-wrap: wrap;
-	gap: 1rem;
+	gap: 2rem;
 	justify-content: center;
 	margin: auto 1rem;
 	 position: relative;
-    padding: 4rem 2rem;
-
+    padding: 2rem 1rem;
+   
+    
  
-
-   ; /* accent color */
 }
-.Projects::before {
-	
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-	  content: '';
-	
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
- 
-  
-  filter: blur(.5px);
-  z-index: 1;
-}
-
 
 	
 
@@ -354,61 +346,59 @@ a:active {
 .Projects article{
 	
 	 z-index: 2;
-
-
 	font-size: 1.2rem;
-	background-color: #fafafa ;
+
 	max-width: 114rem;
-	border-radius: 0.5rem; 
+    border-radius: 0.5rem
+ 
 	
 
 
 }
 
 .Projects article a{
-
+   background-color:  #000000;
 	padding: .2rem;
 	display: block;
-	color: rgb(0, 0, 0);
+	color: #ffffff;
 	position: relative;
-	
+	box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 	font-size: 1.2rem;
-	max-width: 15rem;
+	max-width: 17rem;
+
 	border-radius: 0.5rem;
+
 
 }
 
 .Projects article:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    
 }
 
 
-.coming-soon{
+
+.Projects article a::after {
+	content: " Coming Soon";
+     display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    top: 60%;           /* 50% down from the article */
-    left: 50%;          /* 50% right from the article */
-	transform: translate(-50%, -50%);
-	max-width: 6rem;
-	opacity: 0;
-}
-.Projects article a::before {
-	content: "";
-    position: absolute;    
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-   
-	
+    background-color: #000000d8;
     opacity: 0;
-}
+      color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: .5rem;
 
-.Projects article a:hover::before {
-    opacity: 1;            /* Make it visible */
+   
 }
-
-.Projects article:hover .coming-soon {
+.Projects article a:hover::after {
+    /* visible on hover */
     opacity: 1;
 }
 
@@ -418,42 +408,38 @@ a:active {
 
 
 
-/* Credits */
 
-.production-credits {
-    margin: 2rem auto;
-    max-width: 20rem;
-}
-.production-credits a {
-	margin: 1rem;
-    display: flex;
-    flex-direction: column;
+
+
+
+
+/* contact */
+.contact {
+    padding: 4rem 1rem; /* balanced padding */
     align-items: center;
-    border: .15rem solid #01000C;
-	
+    text-align: center;
+    margin: 0 auto;
+    background-color: #f8f8f8; /* alternate gray background */
 }
 
-.production-credits h3 {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-
+.contact h2 {
+    font-weight: 700;
+    margin-bottom: 0rem;
 }
 
-.sound-icon {
-    max-width: 1.5rem;
+.email {
+    max-width: 5rem;
+    margin: 1rem auto 0; /* center it properly */
+    transition: transform 0.3s ease;
 }
 
-.genius-logo {
-    max-width: 1.5rem;
-	margin-bottom: 1rem;
-	
+.email:hover {
+    transform: scale(1.2);
 }
 
-.contact{
 
-	text-align: center;
-}
+
+
 
 
 
@@ -464,18 +450,19 @@ a:active {
 
 
 footer{
-	background-color: #927673;
+	background-color: #080808;
+    color: #ffffff;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 2rem;
+	padding: 2rem ;
 	gap: 1rem;
-	margin-top: 2rem;
+	
 }
 .socials img{
 
-    width: 1.3rem;
-    height: 1.3rem;
+    width: 1.6rem;
+    height: 1.6rem;
     margin: 0 0.5rem;
 }
 
