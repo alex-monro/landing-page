@@ -1,158 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Monro</title> <!-- replace with logo after desining it --> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Monro</title>
+    <link rel="icon" type="image/svg+xml" href="images/Logo/AM.svg" />
+    <!-- replace with logo after desining it -->
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Catamaran:wght@100..900&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Spinnaker&display=swap" rel="stylesheet"><!-- Css -->
-     <link rel="stylesheet" href="styles/normalize-fwd.css">
-     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Css -->
+    <link rel="stylesheet" href="styles/normalize-fwd.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
 
-     <!-- Scripts 
+    <!-- Scripts 
       Used the example on the day 4 assigment "navigation.js" to help my header-->
     <script src="scripts/navigation.js" defer></script>
-    
-</head>
+  </head>
 
-<body>
-    
-
+  <body>
     <div class="site-wrapper">
+      <header class="site-header">
+        <a href="index.html" class="site-name">AM</a>
 
-        <header class="site-header">
+        <nav class="site-navigation" id="site-navigation">
+          <button
+            class="menu-toggle"
+            aria-controls="header-menu"
+            aria-expanded="false"
+            aria-label="Menu Toggle"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              viewBox="0 0 24 24"
+            >
+              <title>Menu Icon</title>
+              <path
+                d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"
+              ></path>
+            </svg>
+          </button>
 
-            <a href="index.html" class="site-name">AM</a>  <!-- will replace with my logo after I design it  -->
+          <ul class="nav-menu" id="header-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
 
-                
-			<nav class="site-navigation" id="site-navigation">
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
-				<button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
-					<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
-						<title>Menu Icon</title>
-						<path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
-					</svg>
-				</button>
+      <main>
+        <section class="hero">
+          <picture>
+            <source
+              media="(min-width: 50rem)"
+              srcset="images/background/skyline-desktop.jpeg"
+            />
+            <img
+              src="images/background/skyline-mobile.jpg"
+              alt="City skyline illustration"
+            />
+          </picture>
+          <div class="hero-text">
+            <h1>Alex Monro</h1>
+            <p>Front End Web Developer</p>
+          </div>
+        </section>
 
-				<ul class="nav-menu" id="header-menu">
-                    <li><a href="#about">About</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					
-					<li><a href="#contact">Contact</a></li>
-				</ul>
+        <section class="about" id="about">
+          <h2>About Me</h2>
+          <p>
+            Hey, I'm Alex! Im a front-end development student at BCIT focused on
+            creating thoughtful web experiences. When I'm not coding, you'll
+            find me working on music.
+          </p>
+        </section>
 
-			</nav>
-        
-        </header>
+        <section class="portfolio" id="portfolio">
+          <h2>Portfolio</h2>
 
-        <main>
+          <div class="projects">
+            <article>
+              <a href="#">
+                <h3>Country Website</h3>
+                <img
+                  src="images/projects/project-placeholder.jpeg"
+                  alt="Placeholder image for country website project"
+                />
+              </a>
+            </article>
 
-            <section class="site-heading">
-                 <picture>
-        <source media="(min-width: 50rem)" srcset="images/skyline-desktop.jpeg">
-        <img src="images/skyline-mobile.jpg" alt="City skyline illustration">
-    </picture>
-         
-            <div class="hero-text">
-                    <h1>Alex Monro</h1>
-                    <p>Front End Web Developer</p>
-               
-                   
-            </div>
-                
-            </section>
+            <article>
+              <a href="#">
+                <h3>Business Website</h3>
+                <img
+                  src="images/projects/project-placeholder.jpeg"
+                  alt="Placeholder image for Business website"
+                />
+              </a>
+            </article>
 
-      
-            <section class="about" id="about">
-                <h2>About Me</h2>
-                <p>Hey, I'm Alex! Im a front-end development student at BCIT focused on creating thoughtful web experiences. When I'm not coding, you'll find me working on music. </p>
-            </section>
+            <article>
+              <a href="#">
+                <h3>JavaScript Game</h3>
+                <img
+                  src="images/projects/project-placeholder.jpeg"
+                  alt="Placeholder image for A Javacript project"
+                />
+              </a>
+            </article>
 
-            <section class= "portfolio" id="portfolio">
-                <h2>Portfolio</h2>
-                
-                <div class="Projects">
-                  
+            <article>
+              <a href="#">
+                <h3>Movie Database</h3>
+                <img
+                  src="images/projects/project-placeholder.jpeg"
+                  alt="Placeholder Image for Movie database"
+                />
+              </a>
+            </article>
 
-                    <article>
-                        <a href="#">
-                            <h3>Country Website</h3>
-                            <img src="images/construction-workers/project-placeholder.jpeg" alt=" black and white image of a computer. placeholder image" >
-                       </a>
-                    </article>
-                    
-                     <article>
-                        <a href="#">
-                            <h3>Business Website</h3>
-                             <img src="images/construction-workers/project-placeholder.jpeg" alt="" >
-                           
-                       </a>
-                    </article>
+            <article>
+              <a href="#">
+                <h3>Wordpress Websites</h3>
+                <img
+                  src="images/projects/project-placeholder.jpeg"
+                  alt="Placeholder Image for Wordpess Websites"
+                />
+              </a>
+            </article>
 
-                       <article>
-                        <a href="#">
-                            <h3>Javacript Game</h3>
-                                 <img src="images/construction-workers/project-placeholder.jpeg" alt="" >
-                           
-                       </a>
-                    </article>
-                    
-                     <article>
-                        <a href="#">
-                            <h3>Movie Database</h3>
-                             <img src="images/construction-workers/project-placeholder.jpeg" alt="" >
-                             
-                       </a>
-                    </article>
+            <article>
+              <a href="#">
+                <h3>Shopify Store</h3>
+                <img
+                  src="images/projects/project-placeholder.jpeg"
+                  alt="Placeholder image for shopify store"
+                />
+              </a>
+            </article>
+          </div>
+        </section>
 
-                       <article>
-                        <a href="#">
-                            <h3>Wordpess Websites</h3>
-                             <img src="images/construction-workers/project-placeholder.jpeg" alt="" >
-                       
-                       </a>
-                    </article>
-                    
-                     <article>
-                        <a href="#">
-                            <h3>Shopify Store</h3>
-                             <img src="images/construction-workers/project-placeholder.jpeg" alt="" >
-                        
-                       </a>
-                    </article>
-                    
-                    
-                </div>
-            </section>
+        <section class="contact" id="contact">
+          <h2>Contact Me!</h2>
 
-</aside>
+          <a href="mailto:alexmonro546@gmail.com"
+            ><img src="images/email/email-icon.png" alt="Email" class="email"
+          /></a>
+        </section>
+
+        <aside class="music-credits">
+          <p>
+            I am also a Multi-platinum & Grammy-nominated music producer |
+            <a href="https://genius.com/artists/Eza-producer">View credits</a>
+          </p>
         </aside>
+      </main>
 
-            <section class="contact" id="contact">
-                <h2>Contact</h2>
-                <p>Feel free to reach out anytime</p>
-                <a href="mailto:alexmonro546@gmail.com"><img src="images/email/email-icon.png" alt="" class="email"></a>
-            </section>
-            
-        </main>
+      <footer>
+        <span class="socials">
+          <a href="#github"
+            ><img src="images/socials/github.png" alt="GitHub" />
+          </a>
+          <a href="#linkedin"
+            ><img src="images/socials/linkedin.png" alt="Linkedin" />
+          </a>
+          <a href="#instagram"
+            ><img src="images/socials/instagram.png" alt="Instagram" />
+          </a>
+        </span>
 
-        <footer>
-            <span class="socials">
-                <a href="#github"><img src="images/socials/github.png" alt=""></a>
-                <a href="#linkedin"><img src="images/socials/linkedin.png" alt=""></a>
-                <a href="#instagram"><img src="images/socials/instagram.png" alt=""></a>
-            </span>
-            
-             <p>&copy; 2025 Alex Monro</p>
-        
-        </footer>
-
+        <p>&copy; 2025 Alex Monro</p>
+      </footer>
     </div>
-    
-</body>
+  </body>
 </html>
